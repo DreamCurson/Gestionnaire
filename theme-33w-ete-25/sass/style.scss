@@ -16,7 +16,7 @@ Text Domain: club-voyage
 
 // Variable
 // @import "variable/couleur";
-// @import "variable/typographie";
+// @import "variable/typographie"; 
 
 // Base
 @import "base/titre";
@@ -24,6 +24,7 @@ Text Domain: club-voyage
 // Layout
 @import "layout/entete";
 @import "layout/general";
+@import "layout/hero";
 
 // Composant
 @import "composant/recherche";

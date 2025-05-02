@@ -1,0 +1,14 @@
+.hero{
+    background-image: url("images/acores.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 150px;
+    width: 100%;
+    background-repeat: no-repeat;
+
+    display: flex;
+    flex-direction: column;
+
+    &__titre{}
+    &__description{}
+}
