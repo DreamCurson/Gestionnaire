@@ -1,13 +1,15 @@
-.recherche{
-    display: flex;
-    border: 1px solid #aaa;
-    align-items: center;
-
-    &__input{
-        border: none;
-        outline: none;
-    }
-    &__bouton{
-        border-left: 1px solid #aaa;
-    }
+/**
+/////////////////////////////// Compsant .recherche
+*/
+.recherche {
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+  &__input {
+    border: none;
+    outline: none;
+  }
+  &__bouton {
+    border-left: 1px solid #aaa;
+  }
 }

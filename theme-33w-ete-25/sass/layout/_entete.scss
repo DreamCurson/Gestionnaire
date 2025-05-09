@@ -1,34 +1,31 @@
+/* ///////////////////////////// Layout .entete */
+
 .entete {
-    &__contenu {
-        display: flex;
-        align-items: center;
-        margin: 0 auto;
-        gap: 2rem; 
-    }
+  background-color: blanchedalmond;
+  &__contenu {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__logo {
+    width: 75px;
+    height: 75px;
+  }
+  /*  /////////////////////// Navigation */
+  &__menu {
+    // ul
+    display: flex;
+    list-style-type: none;
+    gap: 1rem;
+  }
+  &__menu-item {
+    //li
 
-    &__logo {
-        width: 75px;
-        height: 75px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    a {
+      display: block;
+      background-color: beige;
+      &:hover {
+        background-color: rgb(233, 227, 177);
+      }
     }
-
-    &__nav {
-        display: flex;
-        list-style-type: none;
-        gap: 1rem;
-        padding: 0 20px;
-        background-color: beige;
-    }
-
-    &__menu-item {
-        a {
-            display: block;
-            padding: 0.5rem;
-            &:hover {
-                background-color: bisque;
-            }
-        }
-    }
+  }
 }
