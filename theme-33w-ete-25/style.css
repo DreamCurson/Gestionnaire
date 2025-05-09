@@ -27,8 +27,7 @@ h2 {
 }
 
 .chk__menu:checked ~ .entete__nav {
-  display: flex;
-  flex-direction: column;
+  display: block;
 }
 .chk__menu:checked ~ .entete__nav .entete__menu {
   flex-direction: column;
@@ -42,6 +41,11 @@ h2 {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 600px) {
+  .entete__contenu {
+    display: block;
+  }
 }
 .entete__logo {
   width: 75px;
@@ -58,6 +62,7 @@ h2 {
 @media screen and (max-width: 600px) {
   .entete__nav {
     display: none;
+    margin: 0 auto;
   }
 }
 .entete__burger {
@@ -146,14 +151,23 @@ body {
 
 .recherche {
   display: flex;
+  flex-grow: 1;
   align-items: center;
+  justify-content: end;
 }
 .recherche__input {
   border: 1px solid #aaa;
-  padding: 5px;
+  padding: 5px 10px;
   margin-right: 5px;
   outline: none;
 }
 .recherche__bouton {
   border-left: 1px solid #aaa;
+}
+@media screen and (max-width: 600px) {
+  .recherche {
+    flex-grow: 1;
+    margin: 1rem 0;
+    justify-content: center;
+  }
 }/*# sourceMappingURL=style.css.map */
