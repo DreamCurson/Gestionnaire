@@ -22,10 +22,9 @@ h2 {
   font-size: clamp(1rem, 1.5vw + 0.5324rem, 2rem);
 }
 
-/* ///////////////////////////// Layout .entete */
 .entete {
   background-color: blanchedalmond;
-  /*  /////////////////////// Navigation */
+  padding: 3px 10px 0 10px;
 }
 .entete__contenu {
   display: flex;
@@ -35,12 +34,17 @@ h2 {
   width: 75px;
   height: 75px;
 }
+.entete__nav {
+  margin: 0 1rem 0 auto;
+  align-content: center;
+}
 .entete__menu {
   display: flex;
   list-style-type: none;
   gap: 1rem;
 }
 .entete__menu-item a {
+  text-align: center;
   display: block;
   background-color: beige;
 }
@@ -59,7 +63,8 @@ html {
 }
 
 * {
-  border: 1px solid #ccc;
+  margin: 0;
+  padding: 0;
 }
 
 body {
@@ -88,16 +93,27 @@ body {
   flex-direction: column;
   justify-content: space-around;
 }
-/**
-/////////////////////////////// Compsant .recherche
-*/
+.hero__bouton {
+  padding: 10px;
+  background-color: rgba(139, 219, 219, 0.687);
+  text-decoration: none;
+  color: black;
+  transition: ease-in-out 400ms;
+}
+.hero__bouton:hover {
+  background-color: rgba(139, 219, 219, 0.913);
+  color: rgb(24, 0, 81);
+  text-decoration: underline;
+}
+
 .recherche {
-  border: 1px solid #aaa;
   display: flex;
   align-items: center;
 }
 .recherche__input {
-  border: none;
+  border: 1px solid #aaa;
+  padding: 5px;
+  margin-right: 5px;
   outline: none;
 }
 .recherche__bouton {

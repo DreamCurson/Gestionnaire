@@ -1,7 +1,6 @@
-/* ///////////////////////////// Layout .entete */
-
 .entete {
   background-color: blanchedalmond;
+  padding: 3px 10px 0 10px;
   &__contenu {
     display: flex;
     justify-content: space-between;
@@ -10,17 +9,18 @@
     width: 75px;
     height: 75px;
   }
-  /*  /////////////////////// Navigation */
+  &__nav {
+    margin: 0 1rem 0 auto;
+    align-content: center;
+  }
   &__menu {
-    // ul
     display: flex;
     list-style-type: none;
     gap: 1rem;
   }
   &__menu-item {
-    //li
-
     a {
+      text-align: center;
       display: block;
       background-color: beige;
       &:hover {

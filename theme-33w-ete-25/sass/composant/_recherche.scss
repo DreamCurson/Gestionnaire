@@ -1,12 +1,10 @@
-/**
-/////////////////////////////// Compsant .recherche
-*/
 .recherche {
-  border: 1px solid #aaa;
   display: flex;
   align-items: center;
   &__input {
-    border: none;
+    border: 1px solid #aaa;
+    padding: 5px;
+    margin-right: 5px;
     outline: none;
   }
   &__bouton {
