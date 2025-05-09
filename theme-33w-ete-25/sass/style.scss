@@ -15,8 +15,7 @@ Text Domain: club-voyage
 // Importation des feuilles de style du thème
 
 // Variable
-// @import "variable/couleur";
-// @import "variable/typographie"; 
+@import "variable/dimension";
 
 // Base
 @import "base/titre";
@@ -28,5 +27,3 @@ Text Domain: club-voyage
 
 // Composant
 @import "composant/recherche";
-// @import "composant/bouton";
-// @import "composant/menu";

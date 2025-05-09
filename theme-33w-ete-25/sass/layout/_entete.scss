@@ -1,9 +1,23 @@
+// -------------------- Entete --------------------
+.chk__menu {
+  display: none;
+}
+.chk__menu:checked ~ .entete__nav {
+  display: flex;
+
+  flex-direction: column;
+  .entete__menu {
+    flex-direction: column;
+  }
+}
+
 .entete {
-  background-color: blanchedalmond;
+  background-color: rgba(205, 237, 255, 0.639);
   padding: 3px 10px 0 10px;
   &__contenu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
   &__logo {
     width: 75px;
@@ -12,7 +26,22 @@
   &__nav {
     margin: 0 1rem 0 auto;
     align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: flex-end;
+    @media screen and (max-width: $point-rupture) {
+      display: none;
+    }
   }
+
+  &__burger {
+    display: none;
+    @media screen and (max-width: $point-rupture) {
+      display: block;
+    }
+  }
+
   &__menu {
     display: flex;
     list-style-type: none;
@@ -22,9 +51,11 @@
     a {
       text-align: center;
       display: block;
-      background-color: beige;
+      text-decoration: none;
+      padding: 3px;
+      background-color: rgba(205, 237, 255, 0.998);
       &:hover {
-        background-color: rgb(233, 227, 177);
+        background-color: rgba(177, 222, 246, 0.998);
       }
     }
   }
